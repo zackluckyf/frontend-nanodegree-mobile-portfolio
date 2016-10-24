@@ -1,5 +1,0 @@
-## EXPIRES CACHING ##
-<IfModule mod_expires.c>
-ExpiresDefault "access 10 minutes"
-</IfModule>
-## EXPIRES CACHING ##
