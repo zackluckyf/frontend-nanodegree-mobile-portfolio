@@ -1,7 +1,7 @@
 var purify = require('purify-css');
 
-var content = ['../js/*.js', '../views/*.html'];
-var css = ['../**/css/*.css'];
+var content = ['../views/js/main.js', '../views/pizza.html'];
+var css = ['../css/pizzaStyle.css', '../css/bootstrap-grid.css'];
 
 var options = {
     // Will write purified CSS to this file.
