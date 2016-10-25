@@ -524,8 +524,8 @@ function logAverageFrame(times) { // times is the array of User Timing measureme
 function updatePositions() {
     frame++;
     window.performance.mark("mark_start_frame");
-    console.log();
     var items = document.querySelectorAll('.mover');
+    // fix: this for loop is what needs fixed
     var old_time = new Date();
     for (var i = 0; i < items.length; i++) {
         var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
