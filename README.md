@@ -10,7 +10,7 @@
 
 PageSpeed score brought from ~70 to >90 on all html pages
 
-</h3>Observe framerate by opening the console on this page</h3>
+<h3>Observe framerate by opening the console on this page</h3>
 
 [pizza scripting](https://zackluckyf.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html)
 
