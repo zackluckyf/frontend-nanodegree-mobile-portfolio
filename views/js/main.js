@@ -529,6 +529,7 @@ function updatePositions() {
     var old_time = new Date();
     for (var i = 0; i < items.length; i++) {
         var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+        console.log(phase);
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
     }
     var new_time = new Date();
