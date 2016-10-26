@@ -529,23 +529,17 @@ function updatePositions() {
     window.performance.mark("mark_start_frame");
     var items = document.querySelectorAll('.mover');
     // fix: this for loop is what needs fixed
-    var old_time = new Date();
-    // var phase1 = Math.sin(document.body.scrollTop / 1250);
-    // var phase2 = Math.sin(document.body.scrollTop / 1250 + 1);
-    // var phase3 = Math.sin(document.body.scrollTop / 1250 + 2);
-    // var phase4 = Math.sin(document.body.scrollTop / 1250 + 3);
-    // var phase5 = Math.sin(document.body.scrollTop / 1250 + 4);
-    // for (let i = 0; i < items.length; i += 5) {
-    //     items[i].style.left = items[i].basicLeft + 100 * phase1 + 'px';
-    //     items[i + 1].style.left = items[i + 1].basicLeft + 100 * phase2 + 'px';
-    //     items[i + 2].style.left = items[i + 2].basicLeft + 100 * phase3 + 'px';
-    //     items[i + 3].style.left = items[i + 3].basicLeft + 100 * phase4 + 'px';
-    //     items[i + 4].style.left = items[i + 4].basicLeft + 100 * phase5 + 'px';
-    // }
-
-    for (let i = 0; i < items.length; i++) {
-        var phase1 = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+    var phase1 = Math.sin(document.body.scrollTop / 1250);
+    var phase2 = Math.sin(document.body.scrollTop / 1250 + 1);
+    var phase3 = Math.sin(document.body.scrollTop / 1250 + 2);
+    var phase4 = Math.sin(document.body.scrollTop / 1250 + 3);
+    var phase5 = Math.sin(document.body.scrollTop / 1250 + 4);
+    for (let i = 0; i < items.length; i += 5) {
         items[i].style.left = items[i].basicLeft + 100 * phase1 + 'px';
+        items[i + 1].style.left = items[i + 1].basicLeft + 100 * phase2 + 'px';
+        items[i + 2].style.left = items[i + 2].basicLeft + 100 * phase3 + 'px';
+        items[i + 3].style.left = items[i + 3].basicLeft + 100 * phase4 + 'px';
+        items[i + 4].style.left = items[i + 4].basicLeft + 100 * phase5 + 'px';
     }
 
 
