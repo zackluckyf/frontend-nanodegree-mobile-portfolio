@@ -531,8 +531,6 @@ function updatePositions() {
     for (var i = 0; i < items.length; i++) {
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
     }
-    var new_time = new Date();
-    console.log(new_time - old_time);
 
     // User Timing API to the rescue again. Seriously, it's worth learning.
     // Super easy to create custom metrics.
