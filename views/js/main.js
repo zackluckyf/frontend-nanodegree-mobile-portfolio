@@ -543,7 +543,7 @@ function updatePositions() {
     //     items[i + 4].style.left = items[i + 4].basicLeft + 100 * phase5 + 'px';
     // }
 
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < items.length; i++) {
         var phase1 = Math.sin((document.body.scrollTop / 1250) + (i % 5));
         items[i].style.left = items[i].basicLeft + 100 * phase1 + 'px';
     }
